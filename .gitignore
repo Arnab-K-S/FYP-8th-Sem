@@ -1,0 +1,28 @@
+# Folders
+bdf/
+filter/
+generation/
+grading/
+license/
+materials/
+measurements/
+occupation/
+optcapt/
+results/
+scaling/
+script/
+spectrum/
+
+# Files
+DefectPanelState.panel
+gui3309.uir
+InterfacePanelState.panel
+LayerPanelState.panel
+MultiDefectPanelState.panel
+ok.pdf
+panelsize3309.txt
+SCAPS manual most recent.pdf
+scaps3309.exe
+Scapsdll.dll
+SCAPSdll.lib
+scriptdescription3309.txt
