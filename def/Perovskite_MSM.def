@@ -1,8 +1,31 @@
 > SCAPS 3.3.09 ELIS-UGent: Version scaps3309.exe, dated 18-12-2020, 16:03:28 Problem definition file
-> last saved by SCAPS: 	16-01-2025 at 01:07:46
+> last saved by SCAPS: 	16-01-2025 at 23:43:01
+> 
 > 
 > Comments (to be) included in the def file
 > Can be edited by the user
+> 
+convergence
+
+recalculate mesh :  1 (0: fixed mesh, 1: adaptive mesh)
+maximum mesh changes per iteration step : 10
+maximum ratio between neighbouring points :  1.60e+00
+minimum ratio between neighbouring points :  1.05e+00
+generation limit :  1.00e+00 microA/cm2
+recombination limit :  1.00e-03 microA/cm2
+Mott-Schottky analysis epsilon of sheet side :  0	(left side = -1; right side = +1)
+Mott-Schottky analysis number of points :  3	(3 or 5 as of december 2008)
+Mott-Schottky analysis polynomial order middle :  2	(1 or 2 as of december 2008)
+Mott-Schottky analysis polynomial order edges:  1	(1 or 2 as of december 2008)
+Mott-Schottky analysis epsilon of layer number : -1
+Mott-Schottky analysis defect number :  0
+Mott-Schottky analysis level number :  0
+Mott-Schottky analysis eh type :  1
+Mott-Schottky analysis constant epsilon :   10.00000000
+Mott-Schottky analysis epsilon(x) mode for NW :  0
+Mott-Schottky analysis smooth epsilon for NW :  0
+
+
 back contact
 
 flatband : 1 (1: flatband contact imposed; 0: fixed Phi_m value)
@@ -18,7 +41,7 @@ layer
 
 name : p-Cu2SnS3
 d : 1.000e-05 [m]
-composition grading :	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 0	[-]
+composition grading :	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 1	[-]
 v_th_n :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 1	 0	[m/s]
 v_th_p :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 1	 0	[m/s]
 eps :	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	 0	 0	[-]
@@ -64,7 +87,7 @@ layer
 
 name : layer 2
 d : 2.000e-06 [m]
-composition grading :	  0.00000	  1.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 0	[-]
+composition grading :	  0.00000	  1.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 1	[-]
 v_th_n :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 v_th_p :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 eps :	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	 0	 0	[-]
@@ -108,27 +131,27 @@ Relative hole mass :  0.00e+00
 
 layer
 
-name : layer 3
-d : 2.000e-06 [m]
-composition grading :	  0.00000	  1.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 0	[-]
+name : i-CH3NH3PbI3
+d : 3.000e-04 [m]
+composition grading :	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 1	[-]
 v_th_n :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 v_th_p :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 eps :	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	    10.000000	 0	 0	[-]
-chi :	  4.500000	  4.500000	  1.000000	  1.000000	  1.000000	  4.500000	  4.500000	 0	 0	[eV]
-Eg :	  1.200000	  1.200000	  0.500000	  1.000000	  1.000000	  1.200000	  1.200000	 0	 0	[eV]
-Nc :	 1.000000e+25	 1.000000e+25	 1.000000e+01	 1.000000e+01	 1.000000e+01	 1.000000e+25	 1.000000e+25	 0	 0	[/m^3]
-Nv :	 1.000000e+25	 1.000000e+25	 1.000000e+01	 1.000000e+01	 1.000000e+01	 1.000000e+25	 1.000000e+25	 0	 0	[/m^3]
-mu_n :	 5.000000e-03	 5.000000e-03	 1.000000e-03	 1.000000e+00	 1.000000e+00	 5.000000e-03	 5.000000e-03	 0	 0	[m^2/Vs]
-mu_p :	 5.000000e-03	 5.000000e-03	 1.000000e-03	 1.000000e+00	 1.000000e+00	 5.000000e-03	 5.000000e-03	 0	 0	[m^2/Vs]
+chi :	  3.900000	  4.500000	  1.000000	  1.000000	  1.000000	  3.900000	  3.900000	 1	 0	[eV]
+Eg :	  1.560000	  1.560000	  0.500000	  1.000000	  1.000000	  1.560000	  1.560000	 0	 0	[eV]
+Nc :	 2.600000e+24	 1.000000e+25	 1.000000e+01	 1.000000e+01	 1.000000e+01	 2.600000e+24	 2.600000e+24	 1	 0	[/m^3]
+Nv :	 3.900000e+24	 1.000000e+25	 1.000000e+01	 1.000000e+01	 1.000000e+01	 3.900000e+24	 3.900000e+24	 1	 0	[/m^3]
+mu_n :	 1.500000e-04	 5.000000e-03	 1.000000e-03	 1.000000e+00	 1.000000e+00	 1.500000e-04	 1.500000e-04	 1	 0	[m^2/Vs]
+mu_p :	 1.500000e-04	 5.000000e-03	 1.000000e-03	 1.000000e+00	 1.000000e+00	 1.500000e-04	 1.500000e-04	 1	 0	[m^2/Vs]
 Tunneling in layer: 0 (0: no tunneling, 1: with tunneling)
 Relative electron mass :	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 0	 0	[-]
 Relative hole mass :	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 1.000000e+00	 0	 0	[-]
 K_rad :	 0.000000e+00	 0.000000e+00	 1.000000e+01	 1.000000e+01	 1.000000e+01	 0.000000e+00	 0.000000e+00	 0	 0	[m^3/s]
 c_n_auger :	 0.000000e+00	 0.000000e+00	 1.000000e+01	 1.000000e+01	 1.000000e+01	 0.000000e+00	 0.000000e+00	 0	 0	[m^6/s]
 c_p_auger :	 0.000000e+00	 0.000000e+00	 1.000000e+01	 1.000000e+01	 1.000000e+01	 0.000000e+00	 0.000000e+00	 0	 0	[m^6/s]
-Na(uniform) :	 1.000000e+21	 1.000000e+21	 1.000000e+01	 1.000000e+01	 1.000000e+01	 1.000000e+21	 1.000000e+21	 0	 2	[/m^3]
-Nd(uniform) :	 1.000000e+21	 1.000000e+21	 1.000000e+01	 1.000000e+01	 1.000000e+01	 1.000000e+21	 1.000000e+21	 0	 2	[/m^3]
-absorption grading :	 1200.00	 1200.00	  250.00	  250.00	    0.00	    1.20	    1.20	 0	 0	[nm]
+Na(uniform) :	 0.000000e+00	 0.000000e+00	 1.000000e+01	 1.000000e+01	 1.000000e+01	 0.000000e+00	 0.000000e+00	 0	 2	[/m^3]
+Nd(uniform) :	 1.000000e+24	 1.000000e+24	 1.000000e+01	 1.000000e+01	 1.000000e+01	 1.000000e+24	 1.000000e+24	 0	 2	[/m^3]
+absorption grading :	  794.86	 1033.31	  250.00	  250.00	    0.00	    1.20	    1.20	 7	 0	[nm]
 absorptionmodel pure A material (y=0) : coefficients A and B (line inserted for compatibility with SCAPS until 3.3.06)
 A : 9.129e+06 [/(m*sqrt(eV))] (line inserted for compatibility with SCAPS until 3.3.06)
 B : 0.000e+00 [sqrt(eV)/m] (line inserted for compatibility with SCAPS until 3.3.06)
@@ -156,7 +179,7 @@ layer
 
 name : FTO
 d : 5.000e-05 [m]
-composition grading :	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 0	[-]
+composition grading :	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	  0.00000	 0	 1	[-]
 v_th_n :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 v_th_p :	 1.000e+05	 1.000e+05	 1.000e+01	 1.000e+01	 1.000e+01	 1.000e+05	 1.000e+05	 0	 0	[m/s]
 eps :	     9.000000	    10.000000	    10.000000	    10.000000	    10.000000	     9.000000	     9.000000	 1	 0	[-]
